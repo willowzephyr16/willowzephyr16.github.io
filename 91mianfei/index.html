@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>91免费观看-免费影视在线观看_高清视频资源推荐</title>
+<meta name="description" content="91免费观看首页，提供免费影视在线观看的入口导航与内容推荐，涵盖热门影片、剧集分类与高清观影体验，帮助访客快速找到想看的视频资源。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111827'/%3E%3Cpath d='M24 20l20 12-20 12z' fill='%23f97316'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#0b0f17;
+  --panel:#131a26;
+  --panel-2:#1a2333;
+  --line:#253044;
+  --text:#e8edf6;
+  --muted:#93a1b8;
+  --accent:#f97316;
+  --accent-2:#38bdf8;
+  --radius:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+.wrap{width:min(1140px,92vw);margin:0 auto}
+
+/* header */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(11,15,23,.9);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:20px;padding:14px 0;flex-wrap:wrap;
+}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:.5px}
+.logo .mark{
+  width:34px;height:34px;border-radius:10px;
+  background:linear-gradient(140deg,var(--accent),#ef4444);
+  display:grid;place-items:center;flex:none;
+}
+.logo .mark svg{width:16px;height:16px}
+.nav-links{display:flex;gap:6px;flex-wrap:wrap}
+.nav-links a{
+  padding:7px 13px;border-radius:9px;font-size:14.5px;color:var(--muted);
+  transition:.2s;
+}
+.nav-links a:hover{color:var(--text);background:var(--panel-2)}
+
+/* hero */
+.hero{
+  padding:64px 0 48px;
+  background:
+    radial-gradient(900px 380px at 12% -10%,rgba(249,115,22,.18),transparent 60%),
+    radial-gradient(700px 340px at 88% 0%,rgba(56,189,248,.14),transparent 60%);
+  border-bottom:1px solid var(--line);
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;color:var(--accent);letter-spacing:1.5px;
+  border:1px solid rgba(249,115,22,.35);
+  background:rgba(249,115,22,.08);
+  padding:5px 12px;border-radius:999px;margin-bottom:18px;
+}
+h1{font-size:clamp(30px,4.4vw,46px);line-height:1.22;font-weight:800;letter-spacing:.5px}
+.hero p.lead{margin-top:16px;color:var(--muted);font-size:16px;max-width:34em}
+.hero-actions{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 24px;border-radius:11px;font-size:15.5px;font-weight:600;
+  transition:.2s;
+}
+.btn-primary{background:var(--accent);color:#1a0d02}
+.btn-primary:hover{background:#fb8a3c}
+.btn-ghost{border:1px solid var(--line);color:var(--text);background:transparent}
+.btn-ghost:hover{background:var(--panel-2)}
+.hero-visual{
+  background:var(--panel);border:1px solid var(--line);border-radius:20px;
+  padding:22px;display:grid;gap:14px;
+}
+.screen{
+  aspect-ratio:16/9;border-radius:12px;overflow:hidden;
+  background:linear-gradient(150deg,#1d2a3d,#0f172a);
+  display:grid;place-items:center;border:1px solid var(--line);position:relative;
+}
+.screen::after{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at 70% 30%,rgba(56,189,248,.18),transparent 55%);
+}
+.play-badge{
+  width:62px;height:62px;border-radius:50%;
+  background:rgba(249,115,22,.92);
+  display:grid;place-items:center;z-index:1;
+  box-shadow:0 0 0 10px rgba(249,115,22,.14);
+}
+.play-badge svg{width:22px;height:22px;margin-left:3px}
+.mini-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.mini{
+  background:var(--panel-2);border:1px solid var(--line);border-radius:9px;
+  padding:9px;font-size:12px;color:var(--muted);text-align:center;
+}
+
+/* section base */
+section{padding:56px 0}
+.sec-head{margin-bottom:30px}
+.sec-head h2{font-size:clamp(22px,3vw,28px);font-weight:700;letter-spacing:.4px}
+.sec-head p{color:var(--muted);margin-top:8px;font-size:15px;max-width:46em}
+.tag{color:var(--accent-2);font-size:13px;letter-spacing:1.4px;display:block;margin-bottom:8px}
+
+/* cards */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;transition:.2s;
+}
+.card:hover{transform:translateY(-3px);border-color:#33425c}
+.card .icon{
+  width:40px;height:40px;border-radius:11px;display:grid;place-items:center;
+  background:rgba(249,115,22,.12);margin-bottom:14px;
+}
+.card .icon svg{width:19px;height:19px;stroke:var(--accent);fill:none;stroke-width:1.8}
+.card h3{font-size:17px;margin-bottom:8px;font-weight:700}
+.card p{color:var(--muted);font-size:14.5px}
+
+/* category chips */
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.chip{
+  padding:8px 16px;border-radius:999px;font-size:14px;
+  border:1px solid var(--line);color:var(--muted);background:var(--panel);
+  cursor:pointer;transition:.2s;
+}
+.chip:hover{color:var(--text);border-color:#3a4a66}
+.chip.active{background:var(--accent);color:#1a0d02;border-color:var(--accent);font-weight:600}
+
+/* filter */
+.filter-bar{
+  display:flex;gap:12px;flex-wrap:wrap;align-items:center;
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px;margin-top:22px;
+}
+.filter-bar input{
+  flex:1 1 220px;background:var(--bg);border:1px solid var(--line);border-radius:9px;
+  padding:11px 14px;color:var(--text);font-size:14.5px;outline:none;
+}
+.filter-bar input:focus{border-color:var(--accent)}
+.filter-bar select{
+  background:var(--bg);border:1px solid var(--line);border-radius:9px;
+  padding:11px 14px;color:var(--text);font-size:14.5px;outline:none;
+}
+.list-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:24px}
+.item{
+  display:flex;gap:14px;background:var(--panel);border:1px solid var(--line);
+  border-radius:12px;padding:16px;align-items:flex-start;
+}
+.item .thumb{
+  width:64px;height:64px;border-radius:9px;flex:none;
+  background:linear-gradient(140deg,#233047,#131a26);
+  display:grid;place-items:center;border:1px solid var(--line);
+}
+.item .thumb svg{width:20px;height:20px;stroke:var(--accent-2);fill:none;stroke-width:1.8}
+.item h4{font-size:15.5px;margin-bottom:4px}
+.item p{font-size:13.5px;color:var(--muted)}
+.empty-hint{color:var(--muted);font-size:14px;margin-top:16px;display:none}
+
+/* faq */
+.faq{display:grid;gap:14px}
+.qa{
+  background:var(--panel);border:1px solid var(--line);border-radius:12px;
+  padding:20px 22px;
+}
+.qa h3{font-size:16px;margin-bottom:8px;font-weight:700;color:var(--text)}
+.qa p{font-size:14.5px;color:var(--muted)}
+
+/* cta */
+.cta{
+  background:linear-gradient(120deg,#1a2333,#131a26);
+  border:1px solid var(--line);border-radius:20px;
+  padding:38px;display:flex;justify-content:space-between;align-items:center;
+  gap:26px;flex-wrap:wrap;
+}
+.cta h2{font-size:23px;margin-bottom:8px}
+.cta p{color:var(--muted);font-size:14.5px;max-width:40em}
+
+/* footer */
+footer{
+  border-top:1px solid var(--line);padding:34px 0 40px;margin-top:20px;
+  background:#080c13;
+}
+.foot{
+  display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap;
+  align-items:flex-start;
+}
+.foot .brand{font-weight:700;font-size:16px;display:flex;align-items:center;gap:9px}
+.foot .brand .mark{
+  width:26px;height:26px;border-radius:8px;
+  background:linear-gradient(140deg,var(--accent),#ef4444);
+  display:grid;place-items:center;
+}
+.foot .brand .mark svg{width:12px;height:12px}
+.foot p{color:var(--muted);font-size:13.5px;max-width:34em;margin-top:10px}
+.foot-links{display:flex;gap:20px;flex-wrap:wrap;font-size:13.5px;color:var(--muted)}
+.foot-links a:hover{color:var(--text)}
+
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:30px}
+  .cards{grid-template-columns:1fr 1fr}
+  .list-grid{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .hero{padding:44px 0 36px}
+  .cards{grid-template-columns:1fr}
+  .nav-links{width:100%;justify-content:flex-start}
+  .cta{padding:26px}
+  section{padding:42px 0}
+  .nav-links a{font-size:14px;padding:6px 10px}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z" fill="#1a0d02"/></svg>
+      </span>
+      <span>91免费观看</span>
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#top">首页</a>
+      <a href="#features">观影特点</a>
+      <a href="#library">片库导航</a>
+      <a href="#faq">常见问题</a>
+      <a href="#download">客户端</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">免费影视 · 高清在线</span>
+        <h1>91免费观看</h1>
+        <p class="lead">91免费观看聚焦免费影视在线观看场景，把热门影片、剧集与短视频内容集中到一个页面里。无需注册即可浏览分类，按个人喜好快速进入想看的内容，让找片和观影都更顺手。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#library">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l11 7-11 7z" fill="#1a0d02"/></svg>
+            进入片库
+          </a>
+          <a class="btn btn-ghost" href="#features">了解观影特点</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="screen">
+          <span class="play-badge"><svg viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z" fill="#1a0d02"/></svg></span>
+        </div>
+        <div class="mini-row">
+          <div class="mini">电影</div>
+          <div class="mini">剧集</div>
+          <div class="mini">短片</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag">WHY HERE</span>
+        <h2>91免费观看的观影体验</h2>
+        <p>作为面向普通访客的免费影视入口，91免费观看把重点放在打开就能看、找片不绕路上。下面三点是页面在浏览与播放环节中最常被使用的部分。</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          </div>
+          <h3>分类清晰</h3>
+          <p>电影、剧集、短片等入口按内容形态分列，91免费观看的片库导航让访客不必逐层翻找，也能直接定位到感兴趣的类型。</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>
+          </div>
+          <h3>更新及时</h3>
+          <p>热门内容按上线节奏补充到列表，91免费观看会在片库中标注新增资源，方便常来的访客第一时间看到新片。</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8 21h8"/></svg>
+          </div>
+          <h3>多端适配</h3>
+          <p>页面在电脑与手机上都能顺畅浏览，91免费观看的布局会随屏幕宽度调整，通勤路上或大屏前都能接着看。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="library">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag">LIBRARY</span>
+        <h2>片库导航与筛选</h2>
+        <p>点击分类标签或输入片名关键词，即可在当前列表中筛出对应内容。筛选逻辑在页面内直接运行，结果即时呈现，不需要跳转。</p>
+      </div>
+
+      <div class="chips" role="group" aria-label="内容分类">
+        <button class="chip active" data-cat="all" type="button">全部</button>
+        <button class="chip" data-cat="movie" type="button">电影</button>
+        <button class="chip" data-cat="series" type="button">剧集</button>
+        <button class="chip" data-cat="short" type="button">短片</button>
+      </div>
+
+      <div class="filter-bar">
+        <input id="kw" type="search" placeholder="输入片名关键词，如：城市、星空" aria-label="片名关键词">
+        <select id="sort" aria-label="排序方式">
+          <option value="default">默认排序</option>
+          <option value="new">最新上线</option>
+          <option value="hot">热度优先</option>
+        </select>
+      </div>
+
+      <div class="list-grid" id="list">
+        <div class="item" data-cat="movie" data-title="城市夜行" data-new="3" data-hot="9">
+          <div class="thumb" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 18V8l8-4 8 4v10"/><path d="M4 18h16"/></svg></div>
+          <div><h4>城市夜行</h4><p>电影 · 都市剧情 · 高清</p></div>
+        </div>
+        <div class="item" data-cat="series" data-title="星空之下" data-new="5" data-hot="8">
+          <div class="thumb" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg></div>
+          <div><h4>星空之下</h4><p>剧集 · 青春成长 · 全 12 集</p></div>
+        </div>
+        <div class="item" data-cat="short" data-title="一分钟厨房" data-new="7" data-hot="6">
+          <div class="thumb" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 10h12l-1 8H7z"/><path d="M9 10V6h6v4"/></svg></div>
+          <div><h4>一分钟厨房</h4><p>短片 · 生活技巧 · 系列短集</p></div>
+        </div>
+        <div class="item" data-cat="movie" data-title="山谷回声" data-new="2" data-hot="7">
+          <div class="thumb" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 17l5-8 4 6 3-4 6 6"/></svg></div>
+          <div><h4>山谷回声</h4><p>电影 · 自然纪实 · 高清</p></div>
+        </div>
+        <div class="item" data-cat="series" data-title="旧城档案" data-new="4" data-hot="9">
+          <div class="thumb" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></div>
+          <div><h4>旧城档案</h4><p>剧集 · 悬疑推理 · 更新中</p></div>
+        </div>
+        <div class="item" data-cat="short" data-title="街角手作" data-new="6" data-hot="5">
+          <div class="thumb" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12l4-4 6 6 4-4"/><path d="M5 18h14"/></svg></div>
+          <div><h4>街角手作</h4><p>短片 · 手工记录 · 竖屏</p></div>
+        </div>
+      </div>
+      <p class="empty-hint" id="emptyHint">没有匹配的内容，换个关键词或切回“全部”试试。</p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag">FAQ</span>
+        <h2>关于91免费观看的常见问题</h2>
+        <p>新访客最常提到的几个问题集中在这里，先看一遍能少走弯路。</p>
+      </div>
+      <div class="faq">
+        <div class="qa">
+          <h3>需要注册或登录才能看吗？</h3>
+          <p>浏览片库与筛选内容不需要账号。91免费观看把找片环节前置，访客先确认想看什么，再决定下一步操作。</p>
+        </div>
+        <div class="qa">
+          <h3>分类和关键词能一起用吗？</h3>
+          <p>可以。先点选分类标签缩小范围，再输入片名关键词，两个条件会同时生效；清空关键词即可恢复该分类下的完整列表。</p>
+        </div>
+        <div class="qa">
+          <h3>手机上打开会不会排版错乱？</h3>
+          <p>页面采用响应式布局，手机端会收窄卡片、放大正文行距。91免费观看在移动网络下同样可以完成分类切换与关键词筛选。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="download">
+    <div class="wrap">
+      <div class="cta">
+        <div>
+          <h2>把91免费观看放到桌面</h2>
+          <p>客户端安装包仍在准备中，正式地址上线后会同步更新本页。现阶段可先通过浏览器收藏首页，随时从片库入口进入。</p>
+        </div>
+        <a class="btn btn-primary" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1" style="pointer-events:none;opacity:.65">下载</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <div class="brand">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z" fill="#1a0d02"/></svg>
+        </span>
+        <span>91免费观看</span>
+      </div>
+      <p>91免费观看是面向免费影视在线观看需求的首页入口，内容分类、关键词筛选与观影说明集中呈现，方便访客快速找到想看的内容。</p>
+    </div>
+    <div class="foot-links">
+      <a href="#top">返回顶部</a>
+      <a href="#library">片库导航</a>
+      <a href="#faq">常见问题</a>
+      <a href="#download">客户端</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var chips = document.querySelectorAll('.chip');
+  var items = document.querySelectorAll('#list .item');
+  var kw = document.getElementById('kw');
+  var sort = document.getElementById('sort');
+  var list = document.getElementById('list');
+  var empty = document.getElementById('emptyHint');
+  var activeCat = 'all';
+
+  function apply(){
+    var q = kw.value.trim().toLowerCase();
+    var visible = 0;
+    items.forEach(function(el){
+      var cat = el.getAttribute('data-cat');
+      var title = el.getAttribute('data-title').toLowerCase();
+      var okCat = (activeCat === 'all' || cat === activeCat);
+      var okKw = (q === '' || title.indexOf(q) > -1);
+      var show = okCat && okKw;
+      el.style.display = show ? 'flex' : 'none';
+      if(show) visible++;
+    });
+    empty.style.display = visible ? 'none' : 'block';
+  }
+
+  function applySort(){
+    var v = sort.value;
+    var arr = Array.prototype.slice.call(items);
+    if(v === 'default') return;
+    arr.sort(function(a,b){
+      var ka = v === 'new' ? 'data-new' : 'data-hot';
+      return Number(b.getAttribute(ka)) - Number(a.getAttribute(ka));
+    });
+    arr.forEach(function(el){ list.appendChild(el); });
+  }
+
+  chips.forEach(function(c){
+    c.addEventListener('click', function(){
+      chips.forEach(function(x){ x.classList.remove('active'); });
+      c.classList.add('active');
+      activeCat = c.getAttribute('data-cat');
+      apply();
+    });
+  });
+  kw.addEventListener('input', apply);
+  sort.addEventListener('change', function(){ applySort(); apply(); });
+})();
+</script>
+</body>
+</html>
