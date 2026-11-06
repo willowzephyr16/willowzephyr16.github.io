@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>91影院入口-91影院在线观看入口_91影院手机版入口</title>
+<meta name="description" content="91影院入口页面汇总影院访问方式，说明在线观看、手机版适配与播放常见问题，帮助访客快速找到可用的91影院入口并顺畅进入观影。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0f1a'/%3E%3Cpath d='M24 19l20 13-20 13z' fill='%23f5c451'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#0b0f1a;
+  --bg-soft:#111726;
+  --panel:#151d2e;
+  --line:#243049;
+  --text:#e8edf7;
+  --muted:#96a3bd;
+  --gold:#f5c451;
+  --gold-deep:#c99a2b;
+  --teal:#4fd1c5;
+  --radius:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* header */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(11,15,26,.86);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:18px;padding:14px 0;
+}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;letter-spacing:.5px;white-space:nowrap}
+.logo svg{flex:0 0 auto}
+.logo span{background:linear-gradient(90deg,var(--gold),#ffe6a3);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nav-links{display:flex;gap:6px;flex-wrap:wrap}
+.nav-links a{
+  font-size:14.5px;color:var(--muted);padding:6px 12px;border-radius:999px;
+  transition:.2s;
+}
+.nav-links a:hover{color:var(--text);background:var(--panel)}
+.nav-cta{
+  background:linear-gradient(135deg,var(--gold),var(--gold-deep));
+  color:#1a1304;font-weight:700;font-size:14px;
+  padding:9px 18px;border-radius:999px;white-space:nowrap;
+  box-shadow:0 6px 18px rgba(245,196,81,.18);
+}
+
+/* hero */
+.hero{
+  position:relative;overflow:hidden;
+  border-bottom:1px solid var(--line);
+  background:
+    radial-gradient(900px 380px at 78% -10%,rgba(245,196,81,.14),transparent 62%),
+    radial-gradient(700px 340px at 8% 110%,rgba(79,209,197,.10),transparent 60%),
+    var(--bg-soft);
+}
+.hero-inner{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:40px;
+  align-items:center;padding:64px 0 58px;
+}
+.kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;color:var(--gold);letter-spacing:1px;
+  border:1px solid rgba(245,196,81,.35);
+  background:rgba(245,196,81,.07);
+  padding:5px 12px;border-radius:999px;margin-bottom:18px;
+}
+h1{
+  font-size:clamp(30px,4.6vw,50px);
+  line-height:1.18;font-weight:800;letter-spacing:1px;
+  margin-bottom:18px;
+}
+h1 em{font-style:normal;color:var(--gold)}
+.hero p.lead{color:var(--muted);font-size:16.5px;max-width:520px;margin-bottom:26px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:8px;
+  background:linear-gradient(135deg,var(--gold),var(--gold-deep));
+  color:#1a1304;font-weight:700;padding:12px 26px;border-radius:10px;
+  transition:.2s;box-shadow:0 10px 26px rgba(245,196,81,.2);
+}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:8px;
+  border:1px solid var(--line);color:var(--text);
+  padding:12px 22px;border-radius:10px;font-size:15px;transition:.2s;
+}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.hero-visual{
+  position:relative;border-radius:20px;overflow:hidden;
+  border:1px solid var(--line);
+  background:linear-gradient(160deg,#182238,#0d1320);
+  padding:22px;
+  box-shadow:0 24px 60px rgba(0,0,0,.4);
+}
+.screen{
+  aspect-ratio:16/9;border-radius:12px;
+  background:radial-gradient(circle at 50% 45%,#22314c,#0c111c 75%);
+  display:flex;align-items:center;justify-content:center;
+  border:1px solid #2a3a58;position:relative;
+}
+.screen::after{
+  content:"";position:absolute;inset:0;border-radius:12px;
+  background:repeating-linear-gradient(0deg,rgba(255,255,255,.025) 0 1px,transparent 1px 4px);
+  pointer-events:none;
+}
+.play-dot{
+  width:62px;height:62px;border-radius:50%;
+  background:rgba(245,196,81,.14);
+  border:1.5px solid var(--gold);
+  display:flex;align-items:center;justify-content:center;
+}
+.play-dot svg{margin-left:4px}
+.hero-meta{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+.chip{
+  font-size:12.5px;color:var(--muted);
+  border:1px solid var(--line);border-radius:999px;
+  padding:4px 12px;background:rgba(255,255,255,.02);
+}
+
+/* sections */
+section{padding:58px 0}
+.sec-head{margin-bottom:30px;max-width:720px}
+.sec-tag{font-size:13px;color:var(--teal);letter-spacing:2px;font-weight:600;margin-bottom:8px}
+h2{font-size:clamp(22px,2.6vw,29px);font-weight:800;letter-spacing:.5px;margin-bottom:10px}
+.sec-head p{color:var(--muted);font-size:15.5px}
+
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{
+  background:var(--panel);border:1px solid var(--line);
+  border-radius:var(--radius);padding:24px;
+  transition:.22s;
+}
+.card:hover{border-color:#3a4c70;transform:translateY(-3px)}
+.card .ic{
+  width:42px;height:42px;border-radius:11px;
+  background:rgba(245,196,81,.1);border:1px solid rgba(245,196,81,.28);
+  display:flex;align-items:center;justify-content:center;margin-bottom:14px;
+}
+.card h3{font-size:17px;font-weight:700;margin-bottom:8px}
+.card p{font-size:14.5px;color:var(--muted)}
+.card ul{margin-top:10px;padding-left:18px;color:var(--muted);font-size:14.5px}
+.card ul li{margin-bottom:4px}
+
+/* steps */
+.steps{counter-reset:step;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.step{
+  background:var(--bg-soft);border:1px solid var(--line);
+  border-radius:var(--radius);padding:22px 20px;position:relative;
+}
+.step::before{
+  counter-increment:step;content:counter(step,decimal-leading-zero);
+  font-size:13px;font-weight:700;color:var(--gold);
+  letter-spacing:1px;display:block;margin-bottom:10px;
+}
+.step h4{font-size:15.5px;font-weight:700;margin-bottom:6px}
+.step p{font-size:14px;color:var(--muted)}
+
+/* status board */
+.board{
+  background:var(--bg-soft);border:1px solid var(--line);
+  border-radius:18px;overflow:hidden;
+}
+.board-row{
+  display:grid;grid-template-columns:1.4fr .9fr .9fr;
+  gap:12px;padding:14px 22px;align-items:center;
+  border-bottom:1px solid var(--line);font-size:14.5px;
+}
+.board-row:last-child{border-bottom:0}
+.board-head{
+  background:rgba(255,255,255,.03);font-size:13px;
+  color:var(--muted);letter-spacing:1px;font-weight:600;
+}
+.board-row .name{font-weight:600}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:7px;vertical-align:middle}
+.dot.on{background:#4ade80;box-shadow:0 0 10px rgba(74,222,128,.6)}
+.dot.warn{background:var(--gold);box-shadow:0 0 10px rgba(245,196,81,.5)}
+.muted{color:var(--muted)}
+
+/* faq */
+.faq-item{
+  border:1px solid var(--line);border-radius:12px;
+  background:var(--panel);margin-bottom:12px;overflow:hidden;
+}
+.faq-item summary{
+  cursor:pointer;padding:16px 20px;font-weight:600;font-size:15.5px;
+  list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center;
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";color:var(--gold);font-size:20px;line-height:1;font-weight:400}
+.faq-item[open] summary::after{content:"–"}
+.faq-item p{padding:0 20px 18px;color:var(--muted);font-size:14.5px}
+
+/* note strip */
+.note{
+  border-left:3px solid var(--gold);
+  background:rgba(245,196,81,.06);
+  padding:16px 20px;border-radius:0 12px 12px 0;
+  font-size:14.5px;color:#d8dfee;margin-top:22px;
+}
+
+/* footer */
+footer{
+  border-top:1px solid var(--line);background:var(--bg-soft);
+  padding:38px 0 30px;margin-top:10px;
+}
+.foot-top{
+  display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
+  padding-bottom:24px;border-bottom:1px solid var(--line);
+}
+.foot-brand{max-width:420px}
+.foot-brand .logo{margin-bottom:12px}
+.foot-brand p{font-size:14px;color:var(--muted)}
+.foot-links{display:flex;gap:48px;flex-wrap:wrap}
+.foot-col h5{font-size:13px;color:var(--text);letter-spacing:1px;margin-bottom:12px}
+.foot-col a{display:block;font-size:14px;color:var(--muted);margin-bottom:8px;transition:.2s}
+.foot-col a:hover{color:var(--gold)}
+.copy{margin-top:22px;font-size:13px;color:#6b7893;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:900px){
+  .hero-inner{grid-template-columns:1fr;padding:44px 0 42px;gap:30px}
+  .grid-3{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .nav-links{display:none}
+}
+@media (max-width:620px){
+  body{font-size:15.5px}
+  .grid-3,.grid-2,.steps{grid-template-columns:1fr}
+  .board-row{grid-template-columns:1fr 1fr;font-size:14px;padding:13px 16px}
+  .board-row .name{grid-column:1/-1}
+  .board-head{display:none}
+  .nav-cta{padding:8px 14px;font-size:13px}
+  .logo{font-size:16px}
+  section{padding:42px 0}
+  .foot-links{gap:30px}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="91影院入口首页">
+      <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#151d2e" stroke="#2a3a58"/>
+        <path d="M24 19l20 13-20 13z" fill="#f5c451"/>
+      </svg>
+      <span>91影院入口</span>
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#access">入口方式</a>
+      <a href="#steps">访问步骤</a>
+      <a href="#status">线路状态</a>
+      <a href="#faq">常见问题</a>
+      <a href="#notice">使用提示</a>
+    </nav>
+    <a class="nav-cta" href="#access">立即进入</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <div class="kicker">◆ 页面入口导航 · 实时访问说明</div>
+        <h1>91影院入口</h1>
+        <p class="lead">这里汇总91影院入口的可用访问方式，说明网页端与手机版进入路径、播放前需要确认的设置，以及线路不通时的处理办法。点击下方入口即可开始观影。</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#access">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            进入91影院入口
+          </a>
+          <a class="btn-ghost" href="#steps">查看访问步骤</a>
+        </div>
+        <div class="hero-meta">
+          <span class="chip">网页端直连</span>
+          <span class="chip">手机浏览器适配</span>
+          <span class="chip">无需额外插件</span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="screen">
+          <div class="play-dot">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#f5c451"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+        <div class="hero-meta" style="margin-top:16px">
+          <span class="chip">在线播放</span>
+          <span class="chip">多线路切换</span>
+          <span class="chip">清晰度可选</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ACCESS -->
+  <section id="access">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">ACCESS</div>
+        <h2>91影院入口的三种进入方式</h2>
+        <p>不同设备与网络环境下，进入影院主页的路径略有差别。可根据当前条件选择合适的一种，其余方式可作为备用。</p>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <div class="ic">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f5c451" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3>电脑网页端进入</h3>
+          <p>在浏览器地址栏输入入口地址后直接打开首页，页面加载完成即可浏览片库。适合大屏观看与多窗口操作。</p>
+          <ul>
+            <li>推荐使用主流新版浏览器</li>
+            <li>窗口可全屏播放</li>
+            <li>支持收藏为书签</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="ic">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f5c451" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+          </div>
+          <h3>手机浏览器进入</h3>
+          <p>移动端打开同一91影院入口后，页面会自动适配竖屏布局，片单与播放按钮按小屏重新排布。</p>
+          <ul>
+            <li>建议横屏观看影片</li>
+            <li>保持网络稳定</li>
+            <li>可添加到主屏幕</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="ic">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f5c451" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg>
+          </div>
+          <h3>备用线路进入</h3>
+          <p>当主地址响应缓慢时，可切换到备用线路。备用线路与主站内容一致，仅访问节点不同。</p>
+          <ul>
+            <li>主站异常时优先尝试</li>
+            <li>切换后重新加载页面</li>
+            <li>不影响账号与记录</li>
+          </ul>
+        </div>
+      </div>
+      <div class="note">提示：无论选择哪种方式，最终打开的都应是对应的91影院入口主页；若页面跳转到无关推广页，请返回并更换线路重试。</div>
+    </div>
+  </section>
+
+  <!-- STEPS -->
+  <section id="steps" style="background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">STEPS</div>
+        <h2>从打开91影院入口到开始播放</h2>
+        <p>整个流程通常在三步内完成，播放前只需确认网络与浏览器两项基本条件。</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h4>打开入口地址</h4>
+          <p>在浏览器中访问91影院入口，等待首页片单加载完毕。</p>
+        </div>
+        <div class="step">
+          <h4>挑选影片</h4>
+          <p>按分类浏览或使用页面内搜索框查找片名，进入详情页。</p>
+        </div>
+        <div class="step">
+          <h4>选择线路播放</h4>
+          <p>在播放区切换清晰度与线路，点击播放按钮开始加载。</p>
+        </div>
+        <div class="step">
+          <h4>调整观看设置</h4>
+          <p>根据需要开启全屏、调节音量，或继续浏览其他影片。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATUS -->
+  <section id="status">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">STATUS</div>
+        <h2>各入口线路的访问状态</h2>
+        <p>下表按访问方式列出常见情况与建议处理，帮助判断当前问题出在地址、网络还是浏览器。</p>
+      </div>
+      <div class="board" role="table" aria-label="入口线路状态">
+        <div class="board-row board-head" role="row">
+          <span role="columnheader">访问方式</span>
+          <span role="columnheader">常见状态</span>
+          <span role="columnheader">建议处理</span>
+        </div>
+        <div class="board-row" role="row">
+          <span class="name" role="cell">电脑端主线路</span>
+          <span role="cell"><span class="dot on"></span>通常可直连</span>
+          <span role="cell" class="muted">直接打开即可</span>
+        </div>
+        <div class="board-row" role="row">
+          <span class="name" role="cell">手机端主线路</span>
+          <span role="cell"><span class="dot on"></span>通常可直连</span>
+          <span role="cell" class="muted">建议横屏观看</span>
+        </div>
+        <div class="board-row" role="row">
+          <span class="name" role="cell">备用线路</span>
+          <span role="cell"><span class="dot warn"></span>视节点而定</span>
+          <span role="cell" class="muted">主站缓慢时切换</span>
+        </div>
+        <div class="board-row" role="row">
+          <span class="name" role="cell">加载缓慢</span>
+          <span role="cell"><span class="dot warn"></span>偶发情况</span>
+          <span role="cell" class="muted">刷新或换线路</span>
+        </div>
+      </div>
+      <div class="note">线路状态会随网络环境变化，表中描述为常见情况，不代表固定承诺。遇到持续无法打开时，可先检查本机网络，再尝试其他入口。</div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">FAQ</div>
+        <h2>关于91影院入口的常见疑问</h2>
+        <p>以下问题来自访问过程中较常出现的情况，解答围绕入口本身展开。</p>
+      </div>
+
+      <details class="faq-item" open>
+        <summary>91影院入口打不开怎么办？</summary>
+        <p>先确认本机网络是否正常，再刷新页面。若仍无响应，可改用备用线路，或更换浏览器重新访问。多数情况下属于节点响应缓慢，切换后即可恢复。</p>
+      </details>
+      <details class="faq-item">
+        <summary>手机上能直接使用91影院入口吗？</summary>
+        <p>可以。用手机浏览器打开同一地址，页面会自动适配小屏，片单与播放按钮重新排布。观看时建议横屏，并保持网络连接稳定。</p>
+      </details>
+      <details class="faq-item">
+        <summary>进入后影片加载不出来是什么原因？</summary>
+        <p>常见原因是所选线路临时拥堵。可在播放区切换到其他线路，或降低清晰度后重试。若多个影片均无法加载，优先检查网络带宽。</p>
+      </details>
+      <details class="faq-item">
+        <summary>页面显示异常或排版错乱怎么处理？</summary>
+        <p>多为浏览器版本较旧或缓存影响。建议更新浏览器至较新版本，清除缓存后重新打开91影院入口，必要时换用其他内核的浏览器。</p>
+      </details>
+      <details class="faq-item">
+        <summary>入口地址会经常变化吗？</summary>
+        <p>入口可能因线路调整而变化。建议收藏本页，以便在地址更新后仍能快速找到当前可用的91影院入口，而不必反复搜索。</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- NOTICE -->
+  <section id="notice">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">NOTICE</div>
+        <h2>使用91影院入口前的几点说明</h2>
+        <p>入口只承担导航作用，实际播放体验取决于当前网络、设备与浏览器环境。</p>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <h3>播放环境准备</h3>
+          <p>建议使用较新版本的浏览器，关闭占用带宽的后台下载任务。电脑端可全屏观看，手机端横屏后画面比例更接近影片原始画幅。</p>
+        </div>
+        <div class="card">
+          <h3>入口收藏与更新</h3>
+          <p>把91影院入口加入书签，可以减少每次重新查找的步骤。若某次打开异常，回到本页对照线路状态，选择其他访问方式继续。</p>
+        </div>
+      </div>
+      <div class="note">本页为入口导航与使用说明，影片内容与播放服务由对应站点提供。请在符合当地规定的环境下访问与观看。</div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="logo" href="#top">
+          <svg width="28" height="28" viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#151d2e" stroke="#2a3a58"/>
+            <path d="M24 19l20 13-20 13z" fill="#f5c451"/>
+          </svg>
+          <span>91影院入口</span>
+        </a>
+        <p>91影院入口页面用于说明访问方式、线路状态与常见问题，帮助访客更快找到可用的观影入口。</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h5>页面导航</h5>
+          <a href="#access">入口方式</a>
+          <a href="#steps">访问步骤</a>
+          <a href="#status">线路状态</a>
+        </div>
+        <div class="foot-col">
+          <h5>帮助</h5>
+          <a href="#faq">常见问题</a>
+          <a href="#notice">使用提示</a>
+          <a href="#top">返回顶部</a>
+        </div>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2024 91影院入口 · 入口导航与使用说明</span>
+      <span>请在合规环境下访问</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+            </html>
